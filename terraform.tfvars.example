@@ -1,0 +1,35 @@
+# terraform.tfvars.example - Copy to terraform.tfvars and customize
+
+# Project Configuration
+project_name = "log-monitoring"
+environment  = "dev"
+region      = "us-west-2"
+
+# Alert Configuration
+alert_email = "your-email@example.com"
+
+# Log Configuration
+log_group_name     = "/aws/ec2/logs"
+log_retention_days = 7
+
+# Alarm Thresholds
+error_threshold        = 5
+failed_login_threshold = 3
+evaluation_periods     = 1
+period_seconds        = 300
+
+# Optional Features
+enable_lambda_remediation = true
+
+# Encryption (optional - leave null to use default encryption)
+sns_encryption_key_id              = null
+cloudwatch_logs_encryption_key_id  = null
+
+# Resource Tags
+tags = {
+  Project     = "LogMonitoring"
+  Environment = "Development"
+  Owner       = "CloudEngineer"
+  CostCenter  = "Engineering"
+  ManagedBy   = "Terraform"
+}
