@@ -1,6 +1,6 @@
 # AWS Real-Time Log Monitoring and Alerting System
 
-> **GitHub Repository:** `https://github.com/YOUR_USERNAME/aws-log-monitoring-system`
+> **GitHub Repository:** https://github.com/Copubah/aws-log-monitoring-system
 
 This Terraform project creates an automated AWS monitoring and alerting system that detects failed logins and error messages from EC2 instance logs.
 
